@@ -1,0 +1,37 @@
+[ Git 사용하는 방법 ]
+
+####### 초기화 방법 : Git 처음 사용 방법
+1. GitHub 에서 create repository 를 한다. ( 레포지토리 이름은 프로젝트명)
+2. 내 컴퓨터에 있는 프로젝트 폴더 아이콘 위에서 우클릭을 한다.
+3. Git Bash Here 를 클릭한다.
+----------------------------------- 이제 명령어 쓰기 시작
+4. git init  //Git 쓸거야
+5. git branch -M main
+6. git add .  
+# . 의 의미는 all과 동일하다
+7. git commit -m "first commit"
+8. git remote add origin https://github.com/내닉네임/레포지토리이름.git
+# 위 명령어는 GitHub 사이트에서 복사해서 가져온다
+9. git push origin main
+
+######################################################
+* 만약 위 과정 거치다가 아래 같은 ERROR 나면 ?
+error: failed to push some refs to 'https://github.com/내닉네임/레포지토리이름.git'
+에러가 뜨면
+:
+우선 폴더가 비어있으면 텍스트 파일이든 뭐든 만들어서 추가한다음!
+- git pull
+- git add .
+- git commit -m "first commit"
+- git push origin main
+######################################################
+
+####### 초기화 이후 Git 사용 방법
+1. 프로젝트 폴더내 파일의 내용을 수정(코드추가/코드삭제)
+------------ git 명령어 시작
+2. git add .
+3. git commit -m "수정된 내용 설명"
+4. git push origin main
+
+####### 위 과정을 프로젝트 폴더내 파일 내용의 수정이 있는 날마다 실행
+-> git 을 사용함으로써 프로젝트 관리 효율을 높일 수 있게 된다.
